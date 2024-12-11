@@ -1,27 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Shaorma La Ingineri</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
+        }
+        header {
+            background-color: #8B4513;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+        header nav button {
+            background: white;
+            color: #8B4513;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .section {
+            padding: 20px;
+        }
+        .about-us {
+            text-align: center;
+        }
+        .menu {
+            margin-top: 20px;
+        }
+        .menu-item {
+            margin-bottom: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+        .contact {
             background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #555;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is a simple webpage hosted for free!</p>
+    <header>
+        <h1>Shaorma La Ingineri</h1>
+        <nav>
+            <button onclick="document.getElementById('about-us').scrollIntoView();">Marea deschidere!!</button>
+            <button onclick="document.getElementById('menu').scrollIntoView();">Meniu</button>
+            <button onclick="document.getElementById('contact').scrollIntoView();">Contact</button>
+        </nav>
+    </header>
+
+    <section id="about-us" class="section about-us">
+        <img src="/path/to/shawarma-tower.png" alt="Shaorma Tower" style="width:100%; max-width:600px;">
+        <h2>Cu ingrediente atent alese de ingineri îți aducem o shaorma pentru ingineri</h2>
+        <h3>Ce presupune activitatea noastră</h3>
+        <p><em>"Dragostea e ca o shaorma: dacă nu o ai cu tot ce vrei, parcă îi lipsește ceva"</em></p>
+        <img src="/path/to/slide5-shawarma.png" alt="Marea Deschidere">
+        <p><strong>Marea deschidere!! Vino să îți iei o shaorma gratis!</strong></p>
+        <p style="font-size: smaller;">Șervețele costă 5 lei</p>
+    </section>
+
+    <section id="menu" class="section menu">
+        <h2>Meniul Nostru</h2>
+        <div class="menu-item">
+            <h3>Shaorme</h3>
+            <ul>
+                <li>Shaorma Bum Bum - 40 RON</li>
+                <li>Shaorma Calculata - 35 RON</li>
+                <li>Shaorma Spanzurata - 30 RON</li>
+                <li>Shaorma Halal - 35 RON</li>
+                <li>Shaorma Branzoasa - 28 RON</li>
+                <li>Shaorma Bogata - 40 RON</li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <h3>Alte Preparat</h3>
+            <ul>
+                <li>Meniu Crispy Strips - 25 RON</li>
+                <li>Meniu Elvetian - 30 RON</li>
+                <li>Ciorbita ca Acasa - 15 RON</li>
+                <li>Mystery Box - 50 RON</li>
+                <li>Farfuria lu' Medeleanu - 45 RON</li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <h3>Side Dishes și Băuturi Revigorante</h3>
+            <ul>
+                <li>Cartofi Aurii - 12 RON</li>
+                <li>Crispy de Pui - 15 RON</li>
+                <li>Chifla - 5 RON</li>
+                <li>Salată de Varză/Crudități - 8 RON</li>
+                <li>Sucuri Pepsi/Fanta/Sprite - 7 RON</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1459.1600315848784!2d26.119499351141446!3d44.46230198698477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f9002d2dc279%3A0xe94845294bb82598!2sShaorma%20la%20Ingineri!5e1!3m2!1sro!2sro!4v1733945944990!5m2!1sro!2sro" loading="lazy"></iframe>
+        <p>Telefon: 072883611</p>
+        <p>Email: contact@shaormalaingineri.ro</p>
+    </section>
 </body>
 </html>
